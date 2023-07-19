@@ -159,9 +159,33 @@ body{
     cursor: pointer;
 }
 .img-three:hover .play-button {
-    opacity: 1; /* Show on hover */
+    opacity: 1;
 }
 /* online games section ends here  */
+ /* play instantly section starts here  */
+ .play-container{
+    margin: 300px 200px 200px 200px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .play-content h3{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+ }
+ .play-content p{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+ }
+ .second-img{
+    position: relative;
+    bottom: 220px;
+    right: 120px;
+ }
+ /* play instantly section ends here  */
+
 
 
 
@@ -190,7 +214,7 @@ body{
 /* responsive media query  */
 /* for mobile device */
 @media screen and (max-width:576px) {
-    .nav-container, .nav-items, .banner-container, .game-img
+    .nav-container, .nav-items, .banner-container, .game-img, .play-container
     {
         flex-direction: column;
     }
@@ -212,5 +236,27 @@ body{
     }
     .game-description{
         margin-left: 50px;
+    }
+    .play-container{
+        text-align: center;
+        margin:auto;
+    }
+    .play-content h3{
+        margin-top: 70px;
+        text-align: left;
+        padding-left: 40px;
+    }
+    .play-content p{
+        text-align: left;
+        padding: 20px 40px;
+    }
+    .play-img img{
+        width: 80%;
+    }
+    .second-img img{
+        width: 40%;
+        position: relative;
+        top: 100px;
+        left: 10px;
     }
 }
