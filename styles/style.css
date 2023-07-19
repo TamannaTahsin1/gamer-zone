@@ -175,6 +175,9 @@ body{
     display: flex;
     justify-content: space-evenly;
  }
+ .play-content{
+    padding-top: 100px;
+ }
  .play-content h3{
     text-align: right;
     font-size: 48px;
