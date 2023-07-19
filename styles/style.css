@@ -78,7 +78,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 100px 0px;
-    gap: 500px;
+    gap: 300px;
 }
 /* .banner-content{
     width: 50%;
@@ -148,9 +148,10 @@ body{
     font-weight: 500;
     text-align: left;
 }
+ /**************hovering with button*****************/
 .play-button {
     position: absolute;
-    transform: translate(200%, -300%); 
+    transform: translate(210%, -300%); 
     font-size: 30px;
     color: grey;
     background-color: white;
@@ -161,6 +162,11 @@ body{
 }
 .img-three:hover .play-button {
     opacity: 1;
+}
+.game-img img:hover{
+    border: 1px solid rgb(241, 45, 153);
+    border-radius: 40px;
+    cursor: pointer;
 }
 /* online games section ends here  */
  /* play instantly section starts here  */
@@ -211,6 +217,47 @@ body{
     cursor: pointer;
  }
  /* multiple card section ends here  */
+ /* footer section starts here  */
+ footer{
+    margin-top: 120px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.footer-logo-title{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 10px;
+}
+.footer-items a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+}
+.social-links {
+    padding: 30px;
+    font-size: 40px;
+}
+.conditions a{
+    color:  rgb(255, 255, 255, 0.60);
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+.footer-container p{
+    padding-top: 20px;
+    color: rgb(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+ /* footer section ends here  */
 
 
 
@@ -292,5 +339,9 @@ body{
         grid-template-columns: repeat(2, 1fr);
         padding: 10px;
         gap: 60px;
+    }
+    .footer-items a{
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
