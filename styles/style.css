@@ -71,25 +71,22 @@ body{
 }
 /* nav section ends here  */
 /* banner section starts here  */
+header{
+    background-image: url('../images/Group\ 14.png');
+    background-position:  left;
+    background-repeat: no-repeat;
+}
 .banner-container{
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 100px 0px;
     gap: 300px;
 }
-/* .banner-content{
-    width: 50%;
-    /* background-image: url('../images/Group\ 14.png');
-    width: 901px;
-    height: 700px; *
-    padding-top: 160px;
-} */
 .banner-img{
     width: 100%;
-
 }
 .first-title{
     color: #0B0223;
@@ -146,25 +143,34 @@ body{
     color: #534C64;
     font-size: 15px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
 }
  /**************hovering with button*****************/
 .play-button {
     position: absolute;
     transform: translate(210%, -300%); 
     font-size: 30px;
-    color: grey;
-    background-color: white;
+    color: black;
+    background-color: red;
     padding: 20px;
     border-radius: 50%;
     opacity: 0; 
     cursor: pointer;
 }
+.img-one:hover .play-button {
+    opacity: 1;
+}
+.img-two:hover .play-button {
+    opacity: 1;
+}
 .img-three:hover .play-button {
     opacity: 1;
 }
+.img-four:hover .play-button {
+    opacity: 1;
+}
 .game-img img:hover{
-    border: 1px solid rgb(241, 45, 153);
+    border: 3px solid rgb(241, 45, 153);
     border-radius: 40px;
     cursor: pointer;
 }
@@ -262,39 +268,21 @@ body{
 }
  /* footer section ends here  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* responsive media query  */
+/********************************responsive media query***********************************/
 /* for mobile device */
 @media screen and (max-width:576px) {
+    header{
+        background-position: bottom;
+    }
     .nav-container, .nav-items, .banner-container, .game-img, .play-container, .card-row-one
     {
         flex-direction: column;
     }
     .nav-items a{
         margin-top: 20px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
     }
     .banner-container{
         gap: 150px;
@@ -331,6 +319,10 @@ body{
     .play-img img{
         width: 80%;
     }
+    .play-button {
+        position: absolute;
+        transform: translate(270%, -300%); 
+    }
     .second-img img{
         width: 40%;
         position: relative;
@@ -345,6 +337,34 @@ body{
     }
     .footer-items a{
         flex-direction: column;
+        row-gap: 20px;
+    }
+}
+/* for tablet */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        background-position: bottom;
+    }
+    .nav-container, .nav-items, .banner-container, .game-img, .play-container, .card-row-one
+    {
+        flex-direction: column;
+    }
+    nav{
+        padding: 30px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .play-img img{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .second-img{
+        width: 60%;
+    }
+    .card-row-one{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         row-gap: 20px;
     }
 }
