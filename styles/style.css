@@ -77,16 +77,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 250px;
 }
 .banner-content{
     width: 50%;
-    background-image: url('../images/Group\ 14.png');
+    /* background-image: url('../images/Group\ 14.png');
     width: 901px;
-    height: 700px;
+    height: 700px; */
     padding-top: 160px;
 }
 .banner-img{
-    width: 50%;
+    width: 100%;
+
 }
 .first-title{
     color: #0B0223;
@@ -134,13 +136,20 @@ body{
 
 
 
-
+/* responsive media query  */
+/* for mobile device */
 @media screen and (max-width:576px) {
-    .nav-container, .nav-items
+    .nav-container, .nav-items, .banner-container
     {
         flex-direction: column;
     }
     .nav-items a{
         margin-top: 20px;
+    }
+    .banner-content, .banner-img img{ 
+        width: 100%;
+    }
+    .banner-content{
+       text-align: center;
     }
 }
