@@ -14,6 +14,22 @@ body{
 .primary{
     color: #FF42A5 ;
 }
+.primary-description{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2px 0px;
+    padding-bottom: 10px;
+}
+.btn-primary{
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: white;
+    display: inline-flex;
+    padding: 15px 40px;
+    align-items: flex-start;
+    border: none;
+}
 /* navbar section starts here  */
 .nav-container{
     min-height: 50px;
@@ -58,6 +74,38 @@ body{
 .banner-container{
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content{
+    width: 50%;
+    background-image: url('../images/Group\ 14.png');
+    width: 901px;
+    height: 700px;
+    padding-top: 160px;
+}
+.banner-img{
+    width: 50%;
+}
+.first-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.second-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 95px;
+    font-weight: 800;
+}
+#go-btn{
+    margin-left:20px;
+    border-radius: 48px;
+    background: #4EC5F7;
 }
 /* banner section ends here  */
 
