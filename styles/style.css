@@ -147,6 +147,20 @@ body{
     font-weight: 500;
     text-align: left;
 }
+.play-button {
+    position: absolute;
+    transform: translate(200%, -300%); 
+    font-size: 30px;
+    color: grey;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    opacity: 0; 
+    cursor: pointer;
+}
+.img-three:hover .play-button {
+    opacity: 1; /* Show on hover */
+}
 /* online games section ends here  */
 
 
